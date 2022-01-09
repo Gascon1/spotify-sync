@@ -1,14 +1,14 @@
-import express from 'express';
-import cors from 'cors';
-import { Router } from 'express';
 import cookieParser from 'cookie-parser';
+import cors from 'cors';
+import express from 'express';
 import path from 'path';
+import { Router } from 'express';
 import { fileURLToPath } from 'url';
 
 // route imports
-import index from './routes/index.js';
 import callback from './routes/callback.js';
 import currentlyPlaying from './routes/currentlyPlaying.js';
+import index from './routes/index.js';
 import users from './routes/users.js';
 
 // app config

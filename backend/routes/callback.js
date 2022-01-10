@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
     spotifyApi.setRefreshToken(refresh_token);
 
     res.cookie(stateKey, state);
-    res.redirect('/');
+    res.redirect('back');
   });
 });
 

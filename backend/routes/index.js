@@ -8,6 +8,7 @@ const scopes = [
   'user-read-email',
   'user-read-playback-state',
   'user-read-private',
+  'user-modify-playback-state',
 ];
 
 const stateKey = 'spotify_auth_state';

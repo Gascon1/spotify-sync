@@ -3,9 +3,11 @@ import { spotifyApi } from '../spotifyApi.js';
 
 const router = Router();
 
-router.get('/', (req, res) => {
+router.post('/', (req, res) => {
+  const { volume } = req.body;
+
   spotifyApi
-    .getMyCurrentPlayingTrack()
+    .setVolume(volume)
     .then((data) => {
       res.status(200).json(data.body);
     })
